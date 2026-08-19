@@ -1,0 +1,114 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "1ca7b0f5a6c044d28801990958f7e331",
+    "packages": [
+        {
+            "name": "andreapeverelli/phx-core",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andreapeverelli/phx-core.git",
+                "reference": "411e04e3243b4dada38a32b155880ece11f9443c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andreapeverelli/phx-core/zipball/411e04e3243b4dada38a32b155880ece11f9443c",
+                "reference": "411e04e3243b4dada38a32b155880ece11f9443c",
+                "shasum": ""
+            },
+            "require": {
+                "mustache/mustache": "^3.2"
+            },
+            "type": "framework",
+            "autoload": {
+                "psr-4": {
+                    "AndreaPeverelli\\PhxCore\\": [
+                        "src/",
+                        "src/component/"
+                    ]
+                }
+            },
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Andrea Peverelli",
+                    "email": "ndrpeverelli@gmail.com"
+                }
+            ],
+            "description": "A frontend hypermedia framework for PHP.",
+            "support": {
+                "source": "https://github.com/andreapeverelli/phx-core/tree/v0.1.0",
+                "issues": "https://github.com/andreapeverelli/phx-core/issues"
+            },
+            "time": "2026-08-19T00:52:13+00:00"
+        },
+        {
+            "name": "mustache/mustache",
+            "version": "v3.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bobthecow/mustache.php.git",
+                "reference": "bd4fb2e45ac2df0570c0f4da6898054a950d1ed0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bobthecow/mustache.php/zipball/bd4fb2e45ac2df0570c0f4da6898054a950d1ed0",
+                "reference": "bd4fb2e45ac2df0570c0f4da6898054a950d1ed0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "~2.19.3",
+                "yoast/phpunit-polyfills": "^2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Mustache\\": "src/"
+                },
+                "classmap": [
+                    "src/compat.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Justin Hileman",
+                    "email": "justin@justinhileman.info",
+                    "homepage": "http://justinhileman.com"
+                }
+            ],
+            "description": "A Mustache implementation in PHP.",
+            "homepage": "https://github.com/bobthecow/mustache.php",
+            "keywords": [
+                "mustache",
+                "templating"
+            ],
+            "support": {
+                "issues": "https://github.com/bobthecow/mustache.php/issues",
+                "source": "https://github.com/bobthecow/mustache.php/tree/v3.2.0"
+            },
+            "time": "2026-05-10T04:13:08+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {},
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {},
+    "platform-dev": {},
+    "plugin-api-version": "2.9.0"
+}
