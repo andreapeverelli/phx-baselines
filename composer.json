@@ -19,6 +19,9 @@
         }
     ],
 	"minimum-stability": "stable",
+	"scripts": {
+		"test": "phpunit"
+	},
 	"repositories": [
         {
             "type": "vcs",

@@ -1,1 +1,1 @@
-{"version":2,"defects":[],"times":{"Tests\\HeadingTest::testHeadingsBuild":0.004}}
+{"version":2,"defects":[],"times":{"Tests\\HeadingTest::headingsBuild":0.003}}

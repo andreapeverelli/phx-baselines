@@ -3,6 +3,7 @@
 <phpunit
     bootstrap="vendor/autoload.php"
     cacheDirectory=".phpunit.cache"
+	testdox="true"
 >
 	<testsuites>
 		<testsuite name="PHX Baselines">

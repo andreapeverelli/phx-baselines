@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "andreapeverelli/phx-core",
-            "version": "0.1.1",
+            "version": "0.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/andreapeverelli/phx-core.git",
-                "reference": "0414584780d4c5fadf6276b40bbc032d68cddaf9"
+                "reference": "5d3ccd8b3c832a416db2c8bcc6ad9feabd03ebdb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/andreapeverelli/phx-core/zipball/0414584780d4c5fadf6276b40bbc032d68cddaf9",
-                "reference": "0414584780d4c5fadf6276b40bbc032d68cddaf9",
+                "url": "https://api.github.com/repos/andreapeverelli/phx-core/zipball/5d3ccd8b3c832a416db2c8bcc6ad9feabd03ebdb",
+                "reference": "5d3ccd8b3c832a416db2c8bcc6ad9feabd03ebdb",
                 "shasum": ""
             },
             "require": {
@@ -43,10 +43,10 @@
             ],
             "description": "A frontend hypermedia framework for PHP.",
             "support": {
-                "source": "https://github.com/andreapeverelli/phx-core/tree/v0.1.1",
+                "source": "https://github.com/andreapeverelli/phx-core/tree/v0.1.2",
                 "issues": "https://github.com/andreapeverelli/phx-core/issues"
             },
-            "time": "2026-08-19T01:21:04+00:00"
+            "time": "2026-08-19T01:52:58+00:00"
         },
         {
             "name": "mustache/mustache",

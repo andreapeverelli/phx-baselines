@@ -15,6 +15,8 @@
 namespace Tests;
 
 use PHPUnit\Framework\TestCase;
+use PHPUnit\Framework\Attributes\Test;
+use PHPUnit\Framework\Attributes\TestDox;
 
 use AndreaPeverelli\PhxBaselines\Heading;
 use AndreaPeverelli\PhxBaselines\HeadingLevel;
@@ -22,7 +24,9 @@ use AndreaPeverelli\PhxBaselines\HeadingProps;
 
 final class HeadingTest extends TestCase
 {
-	public function testHeadingsBuild(): void
+	#[Test]
+	#[TestDox("Building Headings H1-H6")]
+	public function headingsBuild(): void
 	{
 		$id = uniqid();
 
