@@ -40,7 +40,7 @@ final class HeadingTest extends TestCase
 			$this->assertStringContainsString(
 				"<h{$level->value} id=\"$id\">Test {$level->name}</h{$level->value}>",
 				$heading->html,
-				"Building {$level->name}"
+				"Building {$level->name}",
 			);
 		}
 	}

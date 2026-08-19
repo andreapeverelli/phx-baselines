@@ -4,24 +4,27 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2262215fdbbe74f715dbf0f68b6a2ebf",
+    "content-hash": "a8ebd594778428da1e694c8a1329a737",
     "packages": [
         {
             "name": "andreapeverelli/phx-core",
-            "version": "0.1.2",
+            "version": "0.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/andreapeverelli/phx-core.git",
-                "reference": "5d3ccd8b3c832a416db2c8bcc6ad9feabd03ebdb"
+                "reference": "676272ef6d70d05097de3e197abfaee9c8b1f01d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/andreapeverelli/phx-core/zipball/5d3ccd8b3c832a416db2c8bcc6ad9feabd03ebdb",
-                "reference": "5d3ccd8b3c832a416db2c8bcc6ad9feabd03ebdb",
+                "url": "https://api.github.com/repos/andreapeverelli/phx-core/zipball/676272ef6d70d05097de3e197abfaee9c8b1f01d",
+                "reference": "676272ef6d70d05097de3e197abfaee9c8b1f01d",
                 "shasum": ""
             },
             "require": {
                 "mustache/mustache": "^3.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^13.3"
             },
             "type": "framework",
             "autoload": {
@@ -31,6 +34,11 @@
                         "src/component/"
                     ]
                 }
+            },
+            "scripts": {
+                "test": [
+                    "phpunit"
+                ]
             },
             "license": [
                 "GPL-3.0"
@@ -43,10 +51,10 @@
             ],
             "description": "A frontend hypermedia framework for PHP.",
             "support": {
-                "source": "https://github.com/andreapeverelli/phx-core/tree/v0.1.2",
+                "source": "https://github.com/andreapeverelli/phx-core/tree/v0.1.3",
                 "issues": "https://github.com/andreapeverelli/phx-core/issues"
             },
-            "time": "2026-08-19T01:52:58+00:00"
+            "time": "2026-08-19T02:53:04+00:00"
         },
         {
             "name": "mustache/mustache",
