@@ -22,7 +22,7 @@ final class Heading extends Component
 	{
 		["default" => $default_props] = $this->setup(
 			props: $props,
-			template: file_get_contexts(__DIR__ . "/heading.mustache"),
+			template: file_get_contents(__DIR__ . "/heading.mustache"),
 		);
 
 		$this->context = new HeadingContext(
