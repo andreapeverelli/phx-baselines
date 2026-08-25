@@ -12,25 +12,39 @@
  * @brief Heading component2 implementation.
  */
 
+declare(strict_types=1);
+
 namespace AndreaPeverelli\PhxBaselines;
 
+use AndreaPeverelli\PhxCore\App;
 use AndreaPeverelli\PhxCore\Component;
+use AndreaPeverelli\PhxCore\Css\CssProperty;
 
 final class Heading extends Component
 {
-	public function __construct(HeadingProps $props)
-	{
-		["default" => $default_props] = $this->setup(
-			props: $props,
-			template: file_get_contents(__DIR__ . "/heading.mustache"),
-		);
+    final protected static function getName(): string
+    {
+        return "baseline-heading";
+    }
 
-		$this->context = new HeadingContext(
-			level: $default_props->level->value,
-			attributes: $this->getAttributes(),
-			content: $default_props->content,
-		);
+    final protected static function getTemplatePath(): string
+    {
+        return __DIR__ . "/heading.mustache";
+    }
 
-		$this->build();
-	}
+    public function __construct(HeadingProps $props, App $app)
+    {
+        ["default" => $default_props] = $this->setup(props: $props, app: $app);
+
+        $this->addColor(color: $default_props->color, css_property: CssProperty::COLOR);
+        $this->addTypo(typo: $default_props->typo, content: $default_props->content);
+
+        $this->context = new HeadingContext(
+            level: $default_props->level->value,
+            attributes: $this->getAttributes(),
+            content: $default_props->content,
+        );
+
+        $this->build();
+    }
 }

@@ -12,36 +12,37 @@
  * @brief Heading component unit test.
  */
 
+declare(strict_types=1);
+
 namespace Tests;
 
 use PHPUnit\Framework\TestCase;
 use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\Attributes\TestDox;
-
 use AndreaPeverelli\PhxBaselines\Heading;
 use AndreaPeverelli\PhxBaselines\HeadingLevel;
 use AndreaPeverelli\PhxBaselines\HeadingProps;
 
 final class HeadingTest extends TestCase
 {
-	#[Test]
-	#[TestDox("Building Headings H1-H6")]
-	public function headingsBuild(): void
-	{
-		$id = uniqid();
+    #[Test]
+    #[TestDox("Building Headings H1-H6")]
+    public function headingsBuild(): void
+    {
+        $id = uniqid();
 
-		foreach(HeadingLevel::cases() as $level) {
-			$heading = new Heading(new HeadingProps(
-				level: $level,
-				content: "Test {$level->name}",
-				attributes: ["id" => $id],
-			));
+        foreach (HeadingLevel::cases() as $level) {
+            $heading = new Heading(new HeadingProps(
+                level: $level,
+                content: "Test {$level->name}",
+                attributes: ["id" => $id],
+            ));
 
-			$this->assertStringContainsString(
-				"<h{$level->value} id=\"$id\">Test {$level->name}</h{$level->value}>",
-				$heading->html,
-				"Building {$level->name}",
-			);
-		}
-	}
+            $this->assertStringContainsString(
+                "<h{$level->value} id=\"$id\">Test {$level->name}</h{$level->value}>",
+                $heading->html,
+                "Building {$level->name}",
+            );
+        }
+    }
 }

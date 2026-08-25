@@ -15,3 +15,26 @@ PHX framework baseline components.
 ```bash
 composer require andreapeverelli/phx-baselines
 ```
+
+### Usefull commands
+#### Do all testings/buildings
+```bash
+composer prepare
+```
+#### Run tests + Get test coverage
+```bash
+composer test
+```
+#### Code analysis
+```bash
+composer analyse
+```
+#### Linting analysis
+```bash
+composer lint
+```
+#### Linting fix
+```bash
+composer fix
+```
+

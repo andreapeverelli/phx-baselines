@@ -12,13 +12,17 @@
  * @brief Heading component context data for mustache rendering.
  */
 
+declare(strict_types=1);
+
 namespace AndreaPeverelli\PhxBaselines;
 
-final class HeadingContext
+/** @phpstan-import-type Attributes from \AndreaPeverelli\PhxCore\Component */
+final readonly class HeadingContext
 {
-	public function __construct(
-		public int $level,
-		public array $attributes,
-		public string $content,
-	) {}
+    /** @param Attributes $attributes */
+    public function __construct(
+        public private(set) int $level,
+        public private(set) array $attributes,
+        public private(set) string $content,
+    ) {}
 }

@@ -12,15 +12,21 @@
  * @brief Heading component props.
  */
 
+declare(strict_types=1);
+
 namespace AndreaPeverelli\PhxBaselines;
 
-final class HeadingProps
+use AndreaPeverelli\PhxCore\Props;
+
+/** @phpstan-import-type RawAttributes from \AndreaPeverelli\PhxCore\Props */
+final class HeadingProps extends Props
 {
-	public function __construct(
-		public HeadingLevel $level = HeadingLevel::H1,
-		public array $attributes = [],
-		public string $content = "",
-	) {
-		$this->attributes["id"] ??= uniqid();
-	}
+    /** @param RawAttributes $attributes */
+    public function __construct(
+        public readonly string $content,
+        public readonly HeadingLevel $level = HeadingLevel::H1,
+        array $attributes = [],
+    ) {
+        $this->attributes = $attributes;
+    }
 }
