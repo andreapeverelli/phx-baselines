@@ -16,10 +16,10 @@ declare(strict_types=1);
 
 namespace AndreaPeverelli\PhxBaselines;
 
-/** @phpstan-import-type Attributes from \AndreaPeverelli\PhxCore\Component */
+/** @phpstan-import-type NormalizedAttributes from \AndreaPeverelli\PhxCore\Component */
 final readonly class HeadingContext
 {
-    /** @param Attributes $attributes */
+    /** @param NormalizedAttributes $attributes */
     public function __construct(
         public private(set) int $level,
         public private(set) array $attributes,
