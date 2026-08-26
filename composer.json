@@ -3,7 +3,7 @@
     "description": "PHX framework baseline components.",
     "type": "framework",
     "license": "GPL-3.0",
-	"version": "0.2.0",
+	"version": "0.2.1",
     "autoload": {
         "psr-4": {
             "AndreaPeverelli\\PhxBaselines\\": [
@@ -45,12 +45,12 @@
         "friendsofphp/php-cs-fixer": "^3.95",
         "monolog/monolog": "^3.10"
     },
-    "require": {
-        "andreapeverelli/phx-core": "^0.2.1"
-    },
     "config": {
         "allow-plugins": {
             "phpdocumentor/shim": true
         }
+    },
+    "require": {
+        "andreapeverelli/phx-core": "^0.2.6"
     }
 }

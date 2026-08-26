@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "60ff36b3f790031a7bf847f060b359b7",
+    "content-hash": "012b056473b329f63cf061f377804ab4",
     "packages": [
         {
             "name": "andreapeverelli/phx-core",
