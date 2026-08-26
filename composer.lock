@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/andreapeverelli/phx-core.git",
-                "reference": "acc674b935461ce2bd5452824c61829bd4939368"
+                "reference": "8db2fcdb9dd0d680bd9c8570d3c50f1f1e0a91df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/andreapeverelli/phx-core/zipball/acc674b935461ce2bd5452824c61829bd4939368",
-                "reference": "acc674b935461ce2bd5452824c61829bd4939368",
+                "url": "https://api.github.com/repos/andreapeverelli/phx-core/zipball/8db2fcdb9dd0d680bd9c8570d3c50f1f1e0a91df",
+                "reference": "8db2fcdb9dd0d680bd9c8570d3c50f1f1e0a91df",
                 "shasum": ""
             },
             "require": {
@@ -76,10 +76,10 @@
             ],
             "description": "A frontend hypermedia framework for PHP.",
             "support": {
-                "source": "https://github.com/andreapeverelli/phx-core/tree/v0.2.8",
+                "source": "https://github.com/andreapeverelli/phx-core/tree/dev",
                 "issues": "https://github.com/andreapeverelli/phx-core/issues"
             },
-            "time": "2026-08-26T19:48:12+00:00"
+            "time": "2026-08-26T19:57:16+00:00"
         },
         {
             "name": "mustache/mustache",
@@ -648,16 +648,16 @@
         },
         {
             "name": "friendsofphp/php-cs-fixer",
-            "version": "v3.95.22",
+            "version": "v3.95.23",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer.git",
-                "reference": "482722e0783c16325a07a998a0d9eda560f9be99"
+                "reference": "b2932a5af3157a0c28324b1efe5e3b556dee09c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/482722e0783c16325a07a998a0d9eda560f9be99",
-                "reference": "482722e0783c16325a07a998a0d9eda560f9be99",
+                "url": "https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/b2932a5af3157a0c28324b1efe5e3b556dee09c4",
+                "reference": "b2932a5af3157a0c28324b1efe5e3b556dee09c4",
                 "shasum": ""
             },
             "require": {
@@ -740,7 +740,7 @@
             ],
             "support": {
                 "issues": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/issues",
-                "source": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/tree/v3.95.22"
+                "source": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/tree/v3.95.23"
             },
             "funding": [
                 {
@@ -748,7 +748,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-08-24T10:37:43+00:00"
+            "time": "2026-08-26T19:54:54+00:00"
         },
         {
             "name": "monolog/monolog",
