@@ -4,7 +4,6 @@
 /build/
 /ast.dump
 /.phpactor.json
-/.php-cs-fixer.cache
 /.phpdoc/
 /.phpunit.cache/
 /coverage/

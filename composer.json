@@ -51,6 +51,6 @@
         }
     },
     "require": {
-        "andreapeverelli/phx-core": "^0.2.6"
+        "andreapeverelli/phx-core": "dev-main"
     }
 }

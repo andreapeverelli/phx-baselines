@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "012b056473b329f63cf061f377804ab4",
+    "content-hash": "daeccac89ca081d32d9cb2f7b01ee16e",
     "packages": [
         {
             "name": "andreapeverelli/phx-core",
-            "version": "0.2.6",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/andreapeverelli/phx-core.git",
-                "reference": "61b204aa9ccddd0649004c22dc1679518624269a"
+                "reference": "42c51600030a4347cf6f231a772b24ef6f7407d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/andreapeverelli/phx-core/zipball/61b204aa9ccddd0649004c22dc1679518624269a",
-                "reference": "61b204aa9ccddd0649004c22dc1679518624269a",
+                "url": "https://api.github.com/repos/andreapeverelli/phx-core/zipball/42c51600030a4347cf6f231a772b24ef6f7407d0",
+                "reference": "42c51600030a4347cf6f231a772b24ef6f7407d0",
                 "shasum": ""
             },
             "require": {
@@ -31,6 +31,7 @@
                 "phpstan/phpstan": "^2.2",
                 "phpunit/phpunit": "^13.3"
             },
+            "default-branch": true,
             "type": "framework",
             "autoload": {
                 "psr-4": {
@@ -75,10 +76,10 @@
             ],
             "description": "A frontend hypermedia framework for PHP.",
             "support": {
-                "source": "https://github.com/andreapeverelli/phx-core/tree/v0.2.6",
+                "source": "https://github.com/andreapeverelli/phx-core/tree/v0.2.7",
                 "issues": "https://github.com/andreapeverelli/phx-core/issues"
             },
-            "time": "2026-08-26T18:43:43+00:00"
+            "time": "2026-08-26T19:32:34+00:00"
         },
         {
             "name": "mustache/mustache",
@@ -5230,7 +5231,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": {
+        "andreapeverelli/phx-core": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {},

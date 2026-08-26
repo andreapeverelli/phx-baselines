@@ -18,6 +18,7 @@ namespace Tests;
 
 use AndreaPeverelli\PhxCore\Palette\BaseColor;
 use AndreaPeverelli\PhxCore\Palette\ColorRole;
+use AndreaPeverelli\PhxCore\Settings\Setting;
 use AndreaPeverelli\PhxCore\Typography\Emphasized;
 use AndreaPeverelli\PhxCore\Typography\TypoRole;
 use AndreaPeverelli\PhxCore\Typography\TypoSubRole;
@@ -41,8 +42,8 @@ final class HeadingTest extends TestCase
     {
         /** @var Settings */
         $settings = [
-            "palette" => json_decode((string) file_get_contents(__DIR__ . "/../../phx-core/settings/default.palette.json"), true),
-            "typescale" => json_decode((string) file_get_contents(__DIR__ . "/../../phx-core/settings/default.typescale.json"), true),
+            Setting::PALETTE->value => Setting::PALETTE->load(),
+             => json_decode((string) file_get_contents(__DIR__ . "/../../phx-core/settings/default.typescale.json"), true),
         ];
 
         $id = uniqid();
