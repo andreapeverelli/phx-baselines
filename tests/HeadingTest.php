@@ -33,19 +33,12 @@ use AndreaPeverelli\PhxBaselines\Heading;
 use AndreaPeverelli\PhxBaselines\HeadingLevel;
 use AndreaPeverelli\PhxBaselines\HeadingProps;
 
-/** @phpstan-import-type Settings from \AndreaPeverelli\PhxCore\App */
 final class HeadingTest extends TestCase
 {
     #[Test]
     #[TestDox("Building Headings H1-H6")]
     public function headingsBuild(): void
     {
-        /** @var Settings */
-        $settings = [
-            Setting::PALETTE->value => Setting::PALETTE->load(),
-             => json_decode((string) file_get_contents(__DIR__ . "/../../phx-core/settings/default.typescale.json"), true),
-        ];
-
         $id = uniqid();
 
         foreach (HeadingLevel::cases() as $level) {
@@ -71,7 +64,7 @@ final class HeadingTest extends TestCase
                 ),
                 app: new App(
                     logger: new Logger(""),
-                    settings: $settings,
+                    settings: Setting::loadAll(),
                 ),
             );
 
