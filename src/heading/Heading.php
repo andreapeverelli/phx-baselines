@@ -9,7 +9,7 @@
 
 /**
  * @file Heading.php
- * @brief Heading component2 implementation.
+ * @brief Heading component implementation.
  */
 
 declare(strict_types=1);
@@ -20,6 +20,7 @@ use AndreaPeverelli\PhxCore\App;
 use AndreaPeverelli\PhxCore\Component;
 use AndreaPeverelli\PhxCore\Css\CssProperty;
 
+/** @extends Component<HeadingProps> */
 final class Heading extends Component
 {
     final protected static function getName(): string

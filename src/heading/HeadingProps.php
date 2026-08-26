@@ -17,13 +17,17 @@ declare(strict_types=1);
 namespace AndreaPeverelli\PhxBaselines;
 
 use AndreaPeverelli\PhxCore\Props;
+use AndreaPeverelli\PhxCore\Palette\Color;
+use AndreaPeverelli\PhxCore\Typography\Typo;
 
-/** @phpstan-import-type RawAttributes from \AndreaPeverelli\PhxCore\Props */
+/** @phpstan-import-type PropsAttributes from \AndreaPeverelli\PhxCore\Props */
 final class HeadingProps extends Props
 {
-    /** @param RawAttributes $attributes */
+    /** @param PropsAttributes $attributes */
     public function __construct(
         public readonly string $content,
+        public readonly Color $color,
+        public readonly Typo $typo,
         public readonly HeadingLevel $level = HeadingLevel::H1,
         array $attributes = [],
     ) {
